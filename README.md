@@ -1,6 +1,8 @@
 # ControleDeTemperatura
 Simulação de controle de temperatura para uma estufa automatizada.
 
+Os arquivos se encontram na branch "Sistema"
+
 Instruções de execução:
 -------
 Ao iniciar o programa, deve-se inserir as temepraturas máxima e mínima do dia. Logo após, deve-se inserir a temperatura atual por hora. É possível inserir 24 temperaturas por dia (Uma temperatura a cada uma hora). 
