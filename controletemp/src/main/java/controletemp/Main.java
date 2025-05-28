@@ -19,7 +19,7 @@ public class Main {
 		controleTemperatura.imprimirTemperaturas();
 		controleTemperatura.CalcularTempMedia();
 		controleTemperatura.CalcularTempMinimaMaxima();
-		controleTemperatura.CalcularTempAcimaLimiteMaximo(contador);
+		controleTemperatura.CalcularTempAcimaLimiteMaximo();
 		
 	}
 

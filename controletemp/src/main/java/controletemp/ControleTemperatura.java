@@ -59,7 +59,8 @@ public class ControleTemperatura {
 	// Para calcular a quantidade de temperaturas acima da média, compara se cada
 	// item da lista é maior, pra cada vez que a condição
 	// for verdadeira, soma na variável contadora
-	public void CalcularTempAcimaLimiteMaximo(int contador) {
+	public void CalcularTempAcimaLimiteMaximo() {
+		int contador = 0;
 		for (double temp : temperaturas) {
 			if (temp > temp_maxima) {
 				contador++;
