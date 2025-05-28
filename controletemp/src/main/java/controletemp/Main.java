@@ -14,6 +14,9 @@ public class Main {
 			contador++;
 		}
 		
+		System.out.println("------- RESUMO DOS REGISTROS DE HOJE --------");
+		
+		controleTemperatura.imprimirTemperaturas();
 		controleTemperatura.CalcularTempMedia();
 		controleTemperatura.CalcularTempMinimaMaxima();
 		controleTemperatura.CalcularTempAcimaLimiteMaximo(contador);
