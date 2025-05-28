@@ -45,7 +45,7 @@ public class ControleTemperatura {
 		}
 
 		int media = soma /tam;
-		System.out.println("Média das temperaturas de hoje: " +media);
+		System.out.println("\nMédia das temperaturas de hoje: " +media);
 	}
 
 	// Para calcular a quantidade de temperaturas acima da média, compara se cada
@@ -58,7 +58,7 @@ public class ControleTemperatura {
 			}
 		}
 
-		System.out.println("Quantidades de temperatura acima da média: " + contador);
+		System.out.println("\nQuantidades de temperatura acima da média: " + contador);
 
 	}
 
@@ -77,7 +77,7 @@ public class ControleTemperatura {
 			}
 		}
 
-		System.out.println("Menor temperatura registrada: " + menor);
+		System.out.println("\nMenor temperatura registrada: " + menor);
 		System.out.println("Maior temperatura registrada: " + maior);
 	}
 
