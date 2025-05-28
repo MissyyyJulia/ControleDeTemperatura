@@ -11,6 +11,14 @@ public class ControleTemperatura {
 	int temp_atual;
 	List<Integer> temperaturas = new ArrayList<>();
 	
+	
+	public void imprimirTemperaturas () {
+		System.out.println("\nTemperaturas registradas: ");
+		for (int temp : temperaturas) {
+			System.out.print(temp+"°, ");
+		}
+	}
+	
 	public void inserirTempMaxMin() {
 		Scanner scanner = new Scanner(System.in);
 
@@ -24,14 +32,14 @@ public class ControleTemperatura {
 	public void inserirTemperaturas(int contador) {
 		Scanner scanner = new Scanner(System.in);
 
-		System.out.println("Insira as temperaturas da hora " + contador + ":");
-		System.out.println("\nInsira a temperatura Atual: ");
+		System.out.println("\n\nInsira a temperatura da " +contador+ "° hora do dia");
+		System.out.println("Temperatura Atual: ");
 		temp_atual = scanner.nextInt();
 		temperaturas.add(temp_atual);
 		
 
 		if (temp_atual > temp_maxima || temp_atual  < temp_minima) {
-			System.out.println("\nA temperatura está fora do padrão.");
+			System.out.println("ATENÇÃO! A temperatura está fora do padrão.");
 		}
 	}
 
@@ -45,7 +53,7 @@ public class ControleTemperatura {
 		}
 
 		int media = soma /tam;
-		System.out.println("\nMédia das temperaturas de hoje: " +media);
+		System.out.println("\n\nMédia das temperaturas de hoje: " +media+ "°");
 	}
 
 	// Para calcular a quantidade de temperaturas acima da média, compara se cada
@@ -65,10 +73,10 @@ public class ControleTemperatura {
 	
 	//Para calcular o menor e o maior numero, o valor atual é comparado ao próximo e se verdadeiro, atribuido à variável
 	public void CalcularTempMinimaMaxima() {
-		double menor = temperaturas.get(0);
-		double maior = temperaturas.get(0);
+		int menor = temperaturas.get(0);
+		int maior = temperaturas.get(0);
 
-		for (double temp : temperaturas) {
+		for (int temp : temperaturas) {
 			if (temp < menor) {
 				menor = temp;
 			}
@@ -77,8 +85,8 @@ public class ControleTemperatura {
 			}
 		}
 
-		System.out.println("\nMenor temperatura registrada: " + menor);
-		System.out.println("Maior temperatura registrada: " + maior);
+		System.out.println("\nMenor temperatura registrada: " + menor+"°");
+		System.out.println("Maior temperatura registrada: " + maior+"°");
 	}
 
 }
